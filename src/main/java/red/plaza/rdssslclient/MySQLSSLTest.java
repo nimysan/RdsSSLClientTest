@@ -31,7 +31,7 @@ public class MySQLSSLTest {
         Statement stmt = null;
         ResultSet rs = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://rds-cert-test-2.c3iilnukj9yy.us-east-1.rds.amazonaws.com:3306", properties);
+            connection = DriverManager.getConnection("jdbc:mysql://rds-cert-test-2.c3iilnukj9yy.us-east-1.rds.amazonaws.com:3306/dbtest", properties);
             stmt = connection.createStatement();
             rs = stmt.executeQuery("SELECT 1 from dual");
         } catch (Exception e) {
