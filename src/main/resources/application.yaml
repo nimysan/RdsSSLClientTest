@@ -6,6 +6,11 @@ logging:
         data:
           jpa: DEBUG
 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
 ---
 spring:
   config:
