@@ -34,6 +34,8 @@ public class MySQLSSLTest {
             connection = DriverManager.getConnection("jdbc:mysql://rds-cert-test-2.c3iilnukj9yy.us-east-1.rds.amazonaws.com:3306", properties);
             stmt = connection.createStatement();
             rs = stmt.executeQuery("SELECT 1 from dual");
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             if (rs != null) {
                 try {
