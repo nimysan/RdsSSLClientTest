@@ -29,4 +29,4 @@ spring:
   datasource:
     username: ${rds_username}
     password: ${rds_password}
-    url: jdbc:mysql://${rds_endpoint}/${rds_database}?useSSL=true&requireSSL=true&verifyServerCertificate=true&enabledSslProtocolSuites=TLSv1.2,TLSv1.1,TLSv1,SSLv3
+    url: jdbc:mysql://${rds_endpoint}/${rds_database}?useSSL=true&requireSSL=true&verifyServerCertificate=true&enabledSslProtocolSuites=TLSv1.2,TLSv1.1,TLSv1,SSLv3&&verifyServerCertificate=true&trustCertificateKeyStoreUrl=file:/home/ec2-user/RdsSSLClientTest/tmp/certs/rds-truststore.jks&trustCertificateKeyStorePassword=changeit
