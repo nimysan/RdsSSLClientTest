@@ -30,12 +30,3 @@ spring:
     username: ${rds_username}
     password: ${rds_password}
     url: jdbc:mysql://${rds_endpoint}/${rds_database}?useSSL=true&requireSSL=true&verifyServerCertificate=true&enabledSslProtocolSuites=TLSv1.2,TLSv1.1,TLSv1,SSLv3
-server:
-  ssl:
-    enabled: true
-    key-store-type: PKCS12
-    key-store: /home/ec2-user/RdsSSLClientTest/tmp/certs/rds-truststore.jks  #classpath:keystore.p12 # this should point to your keystore file
-    key-store-password: changeit
-    trust-store-type: JKS
-    trust-store: /home/ec2-user/RdsSSLClientTest/tmp/certs/rds-truststore.jks # this should point to your truststore file
-    trust-store-password: changeit
