@@ -48,6 +48,8 @@ spring.jpa.hibernate.ddl-auto=update
 | 客户端采用SSL, 过程中更新RDS证书 | [Gating Result](./gating/results/write-写过程中更新证书/index.html) |
 | 客户端不采用SSL, 更新RDS证书   | [Gating Result](./gating/results/write-2-minutes-正常/index.html) |
 
+![img](./gatting.png)
+
 ## Keytool管理
 
 ```bash
