@@ -5,3 +5,13 @@ logging:
       springframework:
         data:
           jpa: DEBUG
+
+---
+spring:
+  config:
+    activate:
+      on-profile: rds
+  datasource:
+    username: admin
+    password: admin123
+    url: jdbc:mysql:tls-cert-test.c3iilnukj9yy.us-east-1.rds.amazonaws.com/testdb
