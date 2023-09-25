@@ -37,5 +37,5 @@ server:
 #    key-store: classpath:keystore.p12 # this should point to your keystore file
 #    key-store-password: <keystore-password>
     trust-store-type: JKS
-    trust-store: /home/ec2-user/RdsSSLClientTest/tmp/certs/truststore.jks # this should point to your truststore file
+    trust-store: /home/ec2-user/RdsSSLClientTest/tmp/certs/rds-truststore.jks # this should point to your truststore file
     trust-store-password: changeit
