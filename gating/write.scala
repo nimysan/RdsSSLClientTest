@@ -2,14 +2,14 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import scala.concurrent.duration._
 
-class RdsReadSimulation extends Simulation {
+class RdsWriteSimulation extends Simulation {
 
   val httpConf = http.baseUrl("http://localhost:8080")
 
   val scn = scenario("My Scenario")
     .during(5.minutes) {
       exec(http("My Request")
-        .get("/read")
+        .get("/write")
         .check(status.is(200))) // 检查返回的HTTP状态码是200
     }
 
