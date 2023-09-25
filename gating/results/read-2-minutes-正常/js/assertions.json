@@ -1,0 +1,10 @@
+{
+  "simulation": "RdsReadSimulation",
+  "simulationId": "rdsreadsimulation",
+  "start": 1695623667668,
+  "description": "",
+  "scenarios": ["Read Scenario"],
+  "assertions": [
+
+  ]
+}

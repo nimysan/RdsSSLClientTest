@@ -1,0 +1,10 @@
+{
+  "simulation": "RdsWriteSimulation",
+  "simulationId": "rdswritesimulation",
+  "start": 1695624594934,
+  "description": "",
+  "scenarios": ["Write Scenario"],
+  "assertions": [
+
+  ]
+}

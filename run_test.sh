@@ -1,0 +1,1 @@
+mvn exec:java -Dexec.mainClass="red.plaza.rdssslclient.MySQLSSLTest" -Dexec.args="admin admin123 /home/ec2-user/RdsSSLClientTest/tmp/certs/rds-truststore.jks changeit"
