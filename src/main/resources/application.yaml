@@ -12,6 +12,6 @@ spring:
     activate:
       on-profile: rds
   datasource:
-    username: admin
-    password: admin123
-    url: jdbc:mysql:tls-cert-test.c3iilnukj9yy.us-east-1.rds.amazonaws.com/testdb
+    username: ${rds_username}
+    password: ${rds_password}
+    url: jdbc:mysql://${rds_endpoint}/${rds_database}
