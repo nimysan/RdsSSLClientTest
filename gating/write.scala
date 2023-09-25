@@ -4,11 +4,11 @@ import scala.concurrent.duration._
 
 class RdsWriteSimulation extends Simulation {
 
-  val httpConf = http.baseUrl("http://localhost:8080")
+  val httpConf = http.baseUrl("http://172.31.45.122:8080")
 
-  val scn = scenario("My Scenario")
-    .during(5.minutes) {
-      exec(http("My Request")
+  val scn = scenario("Write Scenario")
+    .during(2.minutes) {
+      exec(http("Write Request")
         .get("/write")
         .check(status.is(200))) // 检查返回的HTTP状态码是200
     }
